@@ -1,0 +1,6 @@
+click
+notion-py
+flake8
+md2notion
+pytest
+pytest-mock
