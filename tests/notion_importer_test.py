@@ -81,7 +81,7 @@ def test_upload_wiki(mocker, mock_NotionClient):
         importer.upload_wiki('./wiki')
 
     # Process all files
-    ctl.upload_wiki('./testdata/wiki')
+    ctl.upload_wiki('./tests/testdata/wiki')
     assert mock.call('/', 'folder1') in mock_add_page.call_args_list
     assert mock.call('/', 'folder2') in mock_add_page.call_args_list
     assert mock.call('/folder1', 'folder11') in mock_add_page.call_args_list

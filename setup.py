@@ -18,7 +18,15 @@ setup(
     keywords = "markdown notion",
     url = "http://abhi.host",
     packages = find_packages(),
-    long_description=read('README'),
+    long_description=read('README.md'),
+    install_requires=[
+        'click',
+        'notion-py',
+        'flake8',
+        'md2notion',
+    ],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest', 'pytest-mock'],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
